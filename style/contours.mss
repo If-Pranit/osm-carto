@@ -1,16 +1,16 @@
 @contour: lighten(#40403e, 10);
 @contours-text: lighten(#40403e, 10);
 
-@contours-line-width: 0.63;
+@contours-line-width: 0.61;
 @contours-line-smooth: 0.95;   // A value from 0 to 1
 
-@contours-minor-multiplier: 1.0;
-@contours-medium-multiplier: 1.5;
-@contours-major-multiplier: 2.0;
+@contours-minor-multiplier: 1.0 * 1.3;
+@contours-medium-multiplier: 1.5 * 1.3;
+@contours-major-multiplier: 2.0 * 1.3;
 
-@contours-minor-lighten: 10;
-@contours-medium-lighten: 20;
-@contours-major-lighten: 30;
+@contours-minor-lighten: 10 * 1.3;
+@contours-medium-lighten: 20 * 1.3;
+@contours-major-lighten: 30 * 1.3;
 
 #contours10,
 #contours50,
