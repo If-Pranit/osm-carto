@@ -21,9 +21,9 @@
 
 /* zoom Level 10 */
 #contours200[zoom = 10] {
-  line-color: lighten(@contour, @contours-medium-lighten);
+  line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.7;
+  line-opacity: 0.6;
 }
 #contours100[zoom = 10] {
   line-color: lighten(@contour, @contours-major-lighten);
@@ -33,21 +33,21 @@
 
 /* zoom Level 11 */
 #contours200[zoom = 11] {
-  line-color: lighten(@contour, @contours-medium-lighten);
+  line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.9;
+  line-opacity: 0.75;
 }
 #contours100[zoom = 11] {
   line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.7;
+  line-opacity: 0.6;
 }
 
 /* zoom Level 12 */
 #contours200[zoom = 12] {
   line-color: lighten(@contour, @contours-medium-lighten);
   line-width: @contours-line-width * @contours-medium-multiplier;
-  line-opacity: 0.8;
+  line-opacity: 0.7;
 }
 #contours100[zoom = 12] {
   line-color: lighten(@contour, @contours-major-lighten);
@@ -64,7 +64,7 @@
 #contours200[zoom = 13] {
   line-color: lighten(@contour, @contours-medium-lighten);
   line-width: @contours-line-width * @contours-medium-multiplier;
-  line-opacity: 0.9;
+  line-opacity: 0.85;
 }
 #contours100[zoom = 13] {
   line-color: lighten(@contour, @contours-major-lighten);
@@ -191,7 +191,7 @@
   text-placement: line;
   text-fill: @contours-text;
   text-halo-fill: #ebdfdf; /* Background color */
-  text-halo-radius: 5; /* Adjust the shadow size (increase for more blur) */
+  text-halo-radius: 4; /* Adjust the shadow size (increase for more blur) */
   [zoom = 15] {
     text-spacing: 4000;
     text-size: 12;
@@ -199,22 +199,22 @@
   [zoom = 16] {
     text-spacing: 3400;
     text-size: 13;
-    text-halo-radius: 4;
+    text-halo-radius: 3;
   }
   [zoom = 17] {
     text-spacing: 2400;
     text-size: 14;
-    text-halo-radius: 4;
+    text-halo-radius: 3;
   }
   [zoom = 18] {
     text-spacing: 1400;
     text-size: 15;
-    text-halo-radius: 3;
+    text-halo-radius: 2;
   }
   [zoom >= 19] {
     text-spacing: 1000;
     text-size: 15;
-    text-halo-radius: 3;
+    text-halo-radius: 2;
   }
 }
 
@@ -224,7 +224,7 @@
   text-placement: line;
   text-fill: @contours-text;
   text-halo-fill: #ebdfdf; /* Background color */
-  text-halo-radius: 3;
+  text-halo-radius: 2;
   [zoom = 13] {
     text-spacing: 2000;
     text-size: 13;
