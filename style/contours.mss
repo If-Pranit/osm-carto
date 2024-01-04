@@ -22,25 +22,25 @@
 /* zoom Level 10 */
 #contours200[zoom = 10] {
   line-color: lighten(@contour, @contours-major-lighten);
-  line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.6;
+  line-width: @contours-line-width * @contours-minor-multiplier * 0.9;
+  line-opacity: 0.15;
 }
 #contours100[zoom = 10] {
   line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.5;
+  line-opacity: 0.0;
 }
 
 /* zoom Level 11 */
 #contours200[zoom = 11] {
   line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.75;
+  line-opacity: 0.3;
 }
 #contours100[zoom = 11] {
   line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.6;
+  line-opacity: 0.1;
 }
 
 /* zoom Level 12 */
