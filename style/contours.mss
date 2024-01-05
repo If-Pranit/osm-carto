@@ -21,21 +21,21 @@
 
 /* zoom Level 10 */
 #contours200[zoom = 10] {
-  line-color: lighten(@contour, @contours-major-lighten);
+  line-color: #ff0000; //lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier * 0.9;
   line-opacity: 0.15;
 }
 #contours100[zoom = 10] {
   line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.0;
+  line-opacity: 0.2;
 }
 
 /* zoom Level 11 */
 #contours200[zoom = 11] {
-  line-color: lighten(@contour, @contours-major-lighten);
+  line-color: #0000FF; // lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.3;
+  line-opacity: 0.25;
 }
 #contours100[zoom = 11] {
   line-color: lighten(@contour, @contours-major-lighten);
