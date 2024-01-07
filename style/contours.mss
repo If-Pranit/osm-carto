@@ -35,12 +35,12 @@
 #contours200[zoom = 11] {
   line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.5;
+  line-opacity: 0;
 }
 #contours100[zoom = 11] {
   line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.4;
+  line-opacity: 0;
 }
 
 /* zoom Level 12 */
