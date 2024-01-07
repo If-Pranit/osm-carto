@@ -1,4 +1,4 @@
-@contour: lighten(#5e5e5c, 25);
+@contour: lighten(#e8519f, 15);
 @contours-text: lighten(#a38488, 10);
 
 @contours-line-width: 0.61;
@@ -23,36 +23,36 @@
 #contours200[zoom = 10] {
   line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.3;
+  line-opacity: 0.4;
 }
 #contours100[zoom = 10] {
   line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.2;
+  line-opacity: 0.3;
 }
 
 /* zoom Level 11 */
 #contours200[zoom = 11] {
   line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.4;
+  line-opacity: 0.5;
 }
 #contours100[zoom = 11] {
   line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.25;
+  line-opacity: 0.4;
 }
 
 /* zoom Level 12 */
 #contours200[zoom = 12] {
   line-color: lighten(@contour, @contours-medium-lighten);
   line-width: @contours-line-width * @contours-medium-multiplier;
-  line-opacity: 0.5;
+  line-opacity: 0.55;
 }
 #contours100[zoom = 12] {
   line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.5;
+  line-opacity: 0.45;
 }
 #contours50[zoom = 12] {
   line-color: lighten(@contour, @contours-minor-lighten);
@@ -64,12 +64,12 @@
 #contours200[zoom = 13] {
   line-color: lighten(@contour, @contours-medium-lighten);
   line-width: @contours-line-width * @contours-medium-multiplier;
-  line-opacity: 0.6;
+  line-opacity: 0.65;
 }
 #contours100[zoom = 13] {
   line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-medium-multiplier;
-  line-opacity: 0.6;
+  line-opacity: 0.65;
 }
 #contours20[zoom = 13] {
   line-color: lighten(@contour, @contours-minor-lighten);
