@@ -1,16 +1,16 @@
-@contour: lighten(#40403e, 10);
-@contours-text: lighten(#40403e, 10);
+@contour: lighten(#8a8a87, 10);
+@contours-text: lighten(#a38488, 10);
 
 @contours-line-width: 0.61;
 @contours-line-smooth: 0.95;   // A value from 0 to 1
 
-@contours-minor-multiplier: 1.0 * 1.3;
-@contours-medium-multiplier: 1.5 * 1.3;
-@contours-major-multiplier: 2.0 * 1.3;
+@contours-minor-multiplier: 1.0;
+@contours-medium-multiplier: 1.5;
+@contours-major-multiplier: 2.0;
 
-@contours-minor-lighten: 10 * 1.3;
-@contours-medium-lighten: 20 * 1.3;
-@contours-major-lighten: 30 * 1.3;
+@contours-minor-lighten: 10;
+@contours-medium-lighten: 20;
+@contours-major-lighten: 30;
 
 #contours10,
 #contours50,
@@ -21,26 +21,26 @@
 
 /* zoom Level 10 */
 #contours200[zoom = 10] {
-  line-color: #ff0000; //lighten(@contour, @contours-major-lighten);
-  line-width: @contours-line-width * @contours-minor-multiplier * 0.9;
-  line-opacity: 0.15;
-}
-#contours100[zoom = 10] {
   line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
   line-opacity: 0.2;
 }
+#contours100[zoom = 10] {
+  line-color: lighten(@contour, @contours-major-lighten);
+  line-width: @contours-line-width * @contours-minor-multiplier;
+  line-opacity: 0.1;
+}
 
 /* zoom Level 11 */
 #contours200[zoom = 11] {
-  line-color: #0000FF; // lighten(@contour, @contours-major-lighten);
+  line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
   line-opacity: 0.25;
 }
 #contours100[zoom = 11] {
   line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.1;
+  line-opacity: 0.15;
 }
 
 /* zoom Level 12 */
@@ -64,17 +64,17 @@
 #contours200[zoom = 13] {
   line-color: lighten(@contour, @contours-medium-lighten);
   line-width: @contours-line-width * @contours-medium-multiplier;
-  line-opacity: 0.85;
+  line-opacity: 0.8;
 }
 #contours100[zoom = 13] {
   line-color: lighten(@contour, @contours-major-lighten);
   line-width: @contours-line-width * @contours-medium-multiplier;
-  line-opacity: 0.8;
+  line-opacity: 0.7;
 }
 #contours20[zoom = 13] {
   line-color: lighten(@contour, @contours-minor-lighten);
   line-width: @contours-line-width;
-  line-opacity: 0.7;
+  line-opacity: 0.4;
 }
 
 /* zoom Level 14 */
