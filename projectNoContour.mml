@@ -32,7 +32,7 @@ center:
 format: png
 interactivity: false
 minzoom: 0
-maxzoom: 22
+maxzoom: 20
 srs: *srs
 
 Stylesheet:
