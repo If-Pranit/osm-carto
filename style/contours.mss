@@ -20,6 +20,16 @@
   line-smooth: @contours-line-smooth;
 }
 
+
+#contours10[zoom >= 10],
+#contours50[zoom >= 10],
+#contours100[zoom >= 10],
+#contours200[zoom >= 10] {
+  line-color: lighten(@contour, @contours-major-lighten);
+  line-width: @contours-line-width * @contours-minor-multiplier;
+  line-opacity: 0.4;
+}
+
 /* zoom Level 14 */
 #contours200[zoom >= 14] {
   line-color: lighten(@contour, @contours-medium-lighten);
