@@ -12,49 +12,12 @@
 @contours-medium-lighten: 15;
 @contours-major-lighten: 20;
 
-@standard-halo-fill: #ebdfdf;
-@standard-halo-radius: 2;
 
 #contours10,
 #contours50,
 #contours100,
 #contours200 {
   line-smooth: @contours-line-smooth;
-}
-/* zoom Level 11 */
-#contours200[zoom >= 11] {
-  line-color: lighten(@contour, @contours-major-lighten);
-  line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.5;
-}
-#contours100[zoom >= 11] {
-  line-color: lighten(@contour, @contours-major-lighten);
-  line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.35;
-}
-
-/* zoom Level 12 */
-#contours200[zoom >= 12] {
-  line-color: lighten(@contour, @contours-major-lighten);
-  line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.6;
-}
-#contours100[zoom >= 12] {
-  line-color: lighten(@contour, @contours-major-lighten);
-  line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.45;
-}
-
-/* zoom Level 13 */
-#contours200[zoom >= 13] {
-  line-color: lighten(@contour, @contours-major-lighten);
-  line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.8;
-}
-#contours100[zoom >= 13] {
-  line-color: lighten(@contour, @contours-major-lighten);
-  line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.6;
 }
 
 /* zoom Level 14 */
@@ -147,8 +110,8 @@
   text-face-name: @book-fonts;
   text-placement: line;
   text-fill: @contours-text;
-  text-halo-fill: @standard-halo-fill;
-  text-halo-radius: @standard-halo-radius / 2;
+  text-halo-fill: #ebdfdf;
+  text-halo-radius: 1;
   [zoom >= 16][zoom < 17] {
     text-spacing: 2100;
     text-size: 13;
@@ -167,8 +130,8 @@
   text-face-name: @book-fonts;
   text-placement: line;
   text-fill: @contours-text;
-  text-halo-fill: @standard-halo-fill;
-  text-halo-radius: @standard-halo-radius;
+  text-halo-fill: #ebdfdf;
+  text-halo-radius: 2;
   [zoom >= 14][zoom < 15] {
     text-spacing: 2500;
     text-size: 13;
@@ -187,8 +150,8 @@
   text-face-name: @book-fonts;
   text-placement: line;
   text-fill: @contours-text;
-  text-halo-fill: @standard-halo-fill;
-  text-halo-radius: @standard-halo-radius;
+  text-halo-fill: #ebdfdf;
+  text-halo-radius: 2;
   [zoom >= 12][zoom < 13] {
     text-spacing: 3000;
     text-size: 13;

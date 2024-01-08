@@ -358,7 +358,7 @@ Layer:
         (SELECT
             way
          FROM contour
-         WHERE height::int % 50 != 0 AND height::int % 100 != 0 AND height::int % 200 != 0
+         WHERE height::int % 50 != 0 AND height::int % 100 != 0 AND height::int % 200 != 0 AND height > 0
         ) AS contours10
     properties:
       minzoom: 16
@@ -371,10 +371,10 @@ Layer:
         (SELECT
             way
          FROM contour
-         WHERE height::int % 50 = 0 AND height::int % 100 != 0 AND height::int % 200 != 0
+         WHERE height::int % 50 = 0 AND height::int % 100 != 0 AND height::int % 200 != 0 AND height > 0
         ) AS contours50
     properties:
-      minzoom: 10
+      minzoom: 14
   - id: contours100
     geometry: multilinestring
     <<: *extents
@@ -384,10 +384,10 @@ Layer:
         (SELECT
             way
          FROM contour
-         WHERE height::int % 100 = 0 AND height::int % 200 != 0
+         WHERE height::int % 100 = 0 AND height::int % 200 != 0 AND height > 0
         ) AS contours100
     properties:
-      minzoom: 10 
+      minzoom: 14 
   - id: contours200
     geometry: multilinestring
     <<: *extents
@@ -397,10 +397,10 @@ Layer:
         (SELECT
             way
          FROM contour
-         WHERE height::int % 200 = 0
+         WHERE height::int % 200 = 0 AND height > 0
         ) AS contours200
     properties:
-      minzoom: 12
+      minzoom: 14
   - id: contours-text50
     geometry: linestring
     <<: *extents
@@ -410,7 +410,7 @@ Layer:
         (SELECT
             way, height
          FROM contour
-         WHERE height::int % 50 = 0 AND height::int % 100 != 0 AND height::int % 200 != 0
+         WHERE height::int % 50 = 0 AND height::int % 100 != 0 AND height::int % 200 != 0 AND height > 0
          ) AS contours_text50
     properties:
       minzoom: 16
@@ -423,10 +423,10 @@ Layer:
         (SELECT
             way, height
          FROM contour
-         WHERE height::int % 100 = 0 AND height::int % 200 != 0
+         WHERE height::int % 100 = 0 AND height::int % 200 != 0 AND height > 0
          ) AS contours_text100
     properties:
-      minzoom: 16
+      minzoom: 14
   - id: contours-text200
     geometry: linestring
     <<: *extents
@@ -436,10 +436,10 @@ Layer:
         (SELECT
             way, height
          FROM contour
-         WHERE height::int % 200 = 0
+         WHERE height::int % 200 = 0 AND height > 0
         ) AS contours_text200
     properties:
-      minzoom: 12
+      minzoom: 13
   
   - id: piers-poly
     geometry: polygon
