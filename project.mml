@@ -374,7 +374,7 @@ Layer:
          WHERE height::int % 50 = 0 AND height::int % 200 != 0
         ) AS contours50
     properties:
-      minzoom: 14
+      minzoom: 10
   - id: contours200
     geometry: multilinestring
     <<: *extents

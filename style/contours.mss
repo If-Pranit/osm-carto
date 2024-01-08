@@ -1,4 +1,4 @@
-@contour: lighten(#1707f7, 30);
+@contour: lighten(brown, 10);
 @contours-text: lighten(brown, 30);
 
 @contours-line-width: 0.5;
@@ -15,7 +15,7 @@
   line-opacity: 0.4;
 }
 
-#contours50[zoom>=14] {
+#contours50[zoom>=10] {
   line-color: lighten(@contour, 10);
   line-smooth: @contours-line-smooth;
   line-width: @contours-line-width * @contours-medium-multiplier;
@@ -36,7 +36,7 @@
   text-fill: @contours-text;
   [zoom >= 16][zoom < 20] {
     text-spacing: 1000;
-    text-size: 10;
+    text-size: 15;
   }
 }
 
