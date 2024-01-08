@@ -358,7 +358,7 @@ Layer:
         (SELECT
             way
          FROM contour
-         WHERE height::int % 50 != 0 AND height::int % 200 != 0
+         WHERE height::int % 50 != 0 AND height::int % 100 != 0 AND height::int % 200 != 0
         ) AS contours10
     properties:
       minzoom: 16
@@ -371,10 +371,23 @@ Layer:
         (SELECT
             way
          FROM contour
-         WHERE height::int % 50 = 0 AND height::int % 200 != 0
+         WHERE height::int % 50 = 0 AND height::int % 100 != 0 AND height::int % 200 != 0
         ) AS contours50
     properties:
       minzoom: 10
+  - id: contours100
+    geometry: multilinestring
+    <<: *extents
+    Datasource:
+      <<: *osm2pgsql
+      table: |-
+        (SELECT
+            way
+         FROM contour
+         WHERE height::int % 100 = 0 AND height::int % 200 != 0
+        ) AS contours100
+    properties:
+      minzoom: 10 
   - id: contours200
     geometry: multilinestring
     <<: *extents
@@ -397,8 +410,21 @@ Layer:
         (SELECT
             way, height
          FROM contour
-         WHERE height::int % 50 = 0 AND height::int % 200 != 0
+         WHERE height::int % 50 = 0 AND height::int % 100 != 0 AND height::int % 200 != 0
          ) AS contours_text50
+    properties:
+      minzoom: 16
+  - id: contours-text100
+    geometry: linestring
+    <<: *extents
+    Datasource:
+      <<: *osm2pgsql
+      table: |-
+        (SELECT
+            way, height
+         FROM contour
+         WHERE height::int % 100 = 0 AND height::int % 200 != 0
+         ) AS contours_text100
     properties:
       minzoom: 16
   - id: contours-text200
