@@ -414,6 +414,7 @@ Layer:
         ) AS contours200
     properties:
       minzoom: 10
+      maxzoom: 14
 
   - id: contours-text50
     geometry: linestring
