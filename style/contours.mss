@@ -56,27 +56,26 @@
 
 /* zoom Level 13 */
 #contours200[zoom >= 13] {
-  line-color: lighten(@contour, @contours-major-lighten);
-  line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.8;
+  line-color: lighten(@contour, @contours-medium-lighten);
+  line-width: @contours-line-width * @contours-medium-multiplier;
+  line-opacity: 0.5;
 }
 #contours100[zoom >= 13] {
-  line-color: lighten(@contour, @contours-major-lighten);
-  line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.6;
+  line-color: lighten(@contour, @contours-medium-lighten);
+  line-width: @contours-line-width * @contours-medium-multiplier;
+  line-opacity: 0.4;
 }
-
 
 /* zoom Level 14 */
 #contours200[zoom >= 14] {
   line-color: lighten(@contour, @contours-medium-lighten);
   line-width: @contours-line-width * @contours-medium-multiplier;
-  line-opacity: 0.5;
+  line-opacity: 0.54;
 }
 #contours100[zoom >= 14] {
   line-color: lighten(@contour, @contours-medium-lighten);
   line-width: @contours-line-width * @contours-medium-multiplier;
-  line-opacity: 0.4;
+  line-opacity: 0.44;
 }
 #contours50[zoom >= 14] {
   line-color: lighten(@contour, @contours-major-lighten);
