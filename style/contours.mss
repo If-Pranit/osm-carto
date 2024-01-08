@@ -20,16 +20,6 @@
   line-smooth: @contours-line-smooth;
 }
 
-
-#contours10[zoom >= 10],
-#contours50[zoom >= 10],
-#contours100[zoom >= 10],
-#contours200[zoom >= 10] {
-  line-color: lighten(@contour, @contours-major-lighten);
-  line-width: @contours-line-width * @contours-minor-multiplier;
-  line-opacity: 0.1;
-}
-
 /* zoom Level 11 */
 #contours200[zoom >= 11] {
   line-color: lighten(@contour, @contours-major-lighten);
@@ -180,7 +170,7 @@
   text-halo-radius: 2;
   [zoom >= 14][zoom < 15] {
     text-spacing: 2500;
-    text-size: 13;
+    text-size: 12;
   }
   [zoom >= 15][zoom < 16] {
     text-spacing: 1500;
@@ -200,7 +190,7 @@
   text-halo-radius: 2;
   [zoom >= 12][zoom < 13] {
     text-spacing: 3000;
-    text-size: 13;
+    text-size: 12;
   }
   [zoom >= 13][zoom < 14] {
     text-spacing: 2000;
